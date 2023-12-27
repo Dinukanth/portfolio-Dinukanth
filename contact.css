@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.name{
+    font-size:30px;
+    font-weight: bold;
+    color:rgb(173, 56, 56);
+    margin-left: 500px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{padding: 10px;
+       margin: 8px;
+        }
+li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: 0.09;
+    
+}
+nav li :hover{
+    color: rgb(255, 170, 0);
+    background-color:rgb(119, 106, 106);
+    transform: scale();
+    padding: 12px;
+    font-size: large;
+}
+.login-b{
+    background-color: orange;
+      padding-top :10px;
+      padding-bottom :10px;
+      width :50px;
+}
+.coin{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.coin h3{
+    text-align: center;
+    padding: 50px;
+    color: rgb(24, 10, 10);
+}
+.coin p{
+    text-align: center;
+    padding: 60px;
+    color:  blue;
+
+}
+
+
+.inputbox{
+    position: relative;
+    font-size: 30px;
+    box-sizing: 40px;
+    width: 100px;
+    margin-top: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.fa-square-instagram{
+    font-size: 50px;
+    color:rgb(223, 10, 92);
+    padding: 15px;
+    margin-right: 10px;
+}
+.fa-facebook{
+    font-size: 50px;
+    color: blue;
+    padding: 15px;
+ }
+ 
+.fa-twitter{
+    font-size: 50px;
+    color: rgb(4, 140, 210);
+    padding:15px;
+    
+}
+.icon{
+    text-align: center;
+}

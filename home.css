@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{padding: 10px;
+       margin: 8px;
+        }
+li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: 0.3;
+    
+}
+h2{
+    padding: 10px;
+    margin: 5%;
+
+}
+nav li :hover{
+    color:orange;
+    background-color:mediumpurple;
+    transform: scale();
+    padding: 12px;
+    font-size: large;
+}
+
+    
+    nav li :active{color: azure;
+
+
+    }
+    .login-b{
+        background-color: orange;
+        padding: 0;
+        width: auto;
+        height: 50px;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .name{
+        font-size:30px;
+        font-weight: bold;
+        color:rgb(173, 56, 56);
+        margin-left: 500px;
+    }
+     .detail{ 
+        color: rgb(109, 19, 76);
+        font-size: 50px;
+        font-weight: 50;
+        line-height: 10px;
+        padding-bottom: 30px;
+    } */
+    .detail h3{
+        color: black;
+        font-size: 75px;
+        font-weight: 50;
+        line-height: 10px;
+        padding-top: 1px;
+    }
+    .image{
+        width: 30px;
+        margin-right: 400px;
+        position: absolute;
+        right: 10px;
+    }
+    .fa-square-instagram{
+        font-size: 50px;
+        color:rgb(231, 6, 81);
+        padding: 15px;
+        margin-right: 100px;
+    }
+    .fa-facebook{
+        font-size: 50px;
+        color: blue;
+        padding: 15px;
+     }
+     
+    .fa-twitter{
+        font-size: 50px;
+        color: rgb(8, 174, 240);
+        padding:15px;
+        
+    }
+    .icons{
+        display: flex;
+        justify-content:space-between;
+        
+        
+    }
+    
+    
+
+    
+    

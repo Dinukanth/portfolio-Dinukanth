@@ -10,20 +10,20 @@ nav{
     justify-content: space-between;
 
 }
-/* nav ul{
+nav ul{
     display: flex;
     list-style: none;
 }
 nav li{padding: 10px;
        margin: 8px;
         }
-li a{
+/* li a{
     text-decoration: none;
     color:black;
     font-weight: bold;
     transition: 0.3;
     
-} */
+}  */
 h2{
     padding: 10px;
     margin: 5%;

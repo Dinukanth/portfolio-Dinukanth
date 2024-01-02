@@ -1,96 +1,236 @@
 *{
     margin: 0;
     padding: 0;
+
 }
-body{
-    
-    font-family: Arial, Helvetica, sans-serif;
-}
-nav{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px ;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    
-
+    align-items: center;
+    z-index: 100; 
 }
-.name{
-    font-size:30px;
-    font-weight: bold;
-    color:rgb(173, 56, 56);
-    margin-left: 500px;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-}
-nav li{padding: 10px;
-       margin: 8px;
-        }
-li a{
+.logo{
+    font-size: 25px;
+    color: #ededed;
     text-decoration: none;
-    color:black;
-    font-weight: bold;
-    transition: 0.09;
-    
+    font-weight: 600;
 }
-nav li :hover{
-    color: rgb(255, 170, 0);
-    background-color:rgb(119, 106, 106);
-    transform: scale();
-    padding: 12px;
-    font-size: large;
-}
-.login-b{
-    background-color: orange;
-      padding-top :10px;
-      padding-bottom :10px;
-      width :50px;
-}
-.coin{
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
+.navbar a{
+    font-size: 18PX;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
 
 }
-.coin h3{
-    text-align: center;
-    padding: 50px;
-    color: rgb(24, 10, 10);
-}
-.coin p{
-    text-align: center;
-    padding: 60px;
-    color:  blue;
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
 
 }
 
-
-.inputbox{
+.contact{
     position: relative;
-    font-size: 30px;
-    box-sizing: 40px;
-    width: 100px;
-    margin-top: 10px 20px;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #053d65;
+    /* background: url(1234.avif); */
+}
+.contact .content{
+    max-width: 800px;
     text-align: center;
-    border-radius: 8px;
+
 }
-.fa-square-instagram{
-    font-size: 50px;
-    color:rgb(223, 10, 92);
-    padding: 15px;
-    margin-right: 10px;
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
 }
-.fa-facebook{
-    font-size: 50px;
-    color: blue;
-    padding: 15px;
- }
- 
-.fa-twitter{
-    font-size: 50px;
-    color: rgb(4, 140, 210);
-    padding:15px;
+.contact .content p{
+
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
     
 }
-.icon{
-    text-align: center;
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
 }
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding:0px;
+    font-size: 16px;
+    margin: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+
+
+
+
+
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate3d(-20px);
+}
+.contactform .inputbox input [type="sumbit"]{
+    width: 100px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+/* @media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo{
+        width: 100%;
+    }
+} */
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.home-sci a:hover {
+    color:#081b29 ;
+
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+
+}
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+
+
+    
+    

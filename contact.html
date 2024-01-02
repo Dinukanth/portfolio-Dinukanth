@@ -5,43 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
-    <nav>
+    <header class="header">
+        <a href="#" class="logo">Dinu.</a>
+        <nav class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="About.html">About Me</a>
+            <a href="#">Projects</a>
+            <a href="contact.html"class="active">Contact</a>
     
-        
-        <p class="name"> Dinu</p>
-        <ul>
-            <li><a href="http://127.0.0.1:33033/home.html">HOME</a></li>
-            <li><a href="http://127.0.0.1:5500/About.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="http://127.0.0.1:35179/contact.html">Contact</a></li>
-            <div class="login-b"></div>
-            <button class='login-b' type='submit'>Login</button><br>
-            
-     </nav>
-        <div class="coin">
-            <h3> Lets Design Together</h3>
-            <p>If you need help</p>
-            <input type="text" name="" required="required">
-            <span>Email</span>
-            <input type="submit" value="contact me">
-         </div>
-         <div class="icon">
-            <a href="https://www.instagram.com/dinuk_5697?igsh=YTQwZjQ0NmI0OA==">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a> 
-            <a href="https://www.facebook.com/profile.php?id=100078995646499&mibextid=gik2fB">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://x.com/dinukanth?t=dkCGGHxbsaJfI5x49_2hig&s=09>">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
+        </nav>
+      </header> 
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Generally, visitors can also leave feedback or ask questions through these channels.
+                 You’ll receive valuable information about your customers’ preferences and expectations if done correctly. </p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class='bx bxs-map'></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Vattappalai,<br>Mulliyawalai.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bxs-phone'></i></div>
+                    <div class="text">
+                        <h3>Phone No</h3>
+                        <p>0760061396</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bxs-envelope'></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>pdinukanth@gmail.com</p>
+                    </div>
+                </div>
             </div>
-
-     
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp-square'></i></i></a>
+      
+      
+          </div>
+    </section>
     
 </body>
 </html>

@@ -169,7 +169,7 @@
     padding: 10px;
     font-size: 18px;
 }
-/* @media (max-width:991px){
+ @media (max-width:991px){
     .contact{
         padding: 50px;
     }
@@ -182,7 +182,7 @@
     .container .contactinfo{
         width: 100%;
     }
-} */
+} 
 .home-sci{
     position: absolute;
     bottom: 40px;

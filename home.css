@@ -1,12 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'poppins', sans-serif;
+   
 }
 
 body{
-    background: #081b29;
+    background: #031c2d;
     color: #ededed;
 }
 .header{
@@ -18,7 +21,7 @@ body{
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     z-index: 100; 
 }
 .logo{
@@ -51,24 +54,24 @@ body{
     max-width: 600px;
 }
 .home-content h1 {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
 
 }
 .home-content h3 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     color: #00abf0;
 }
 .home-content p {
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px 0 40px;
 }
 .home-content .btn-box{
     display: flex;
     justify-content: space-between;
-    width: 345px;
+    width: 350px;
     height: 50px;
 }
 .btn-box a{
@@ -114,7 +117,7 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: #082437;
     z-index: -1;
     transition: .5s;
 
@@ -123,10 +126,116 @@ body{
     width: 100%;
 
 }
+
+.image{
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 400px;
+
+}
+img{
+    width: 40rem;
+}
+.image:hover{
+    background: #053859;
+    opacity: .8;
+}
+.image:hover::before{
+    content: '';
+    position: absolute;
+    
+}
+
+
+@media (max-width:551px){
+    .header{
+        display: block;
+        text-justify: ;
+    }
+    .navbar{
+        padding: 2px 0px;
+    }
+    .navbar a{
+        display: flex;
+        margin-top: -3px;
+        margin-left: -6px;
+    }
+
+
+
+
+
+
+    .image img{
+       margin-left: -700px;
+       width: 270px;
+       height: 270px;
+       border-radius: 50%;
+       margin-top: 350px;
+    }
+    .home .home-content{
+        margin-top: 890px;  
+    }
+
+    .home .home-content h3{
+        font-size: 16px;
+
+    }
+    .home .home-content .btn-box{
+        
+    }
+
+
+
+    
+    .btn-box {
+        width: px;
+    }
+
+
+
+    
+
+    .home .home-content h1{
+        font-size: 20px;
+    }
+
+    .home .home-content p{
+        font-size: 15px;
+    }
+    .home .home-sci{
+        bottom: 30px;
+        width: 200px;
+
+    }
+    .home .home-sci a{
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+
+    .home{
+        height: 10vh;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .home-sci{
     position: absolute;
     bottom: 40px;
-    width: 220px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
 
@@ -136,8 +245,8 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: 2px solid #00abf0;
     border-radius: 50%;
@@ -146,7 +255,7 @@ body{
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .2s;
 
 }
 .home-sci a:hover {

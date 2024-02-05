@@ -135,6 +135,63 @@ body{
     letter-spacing: 1px;
 
 }
+
+
+
+
+.cv a{ 
+    position: absolute; 
+    margin-left: 670px;
+    margin-top: 370px;
+    top: 10px; 
+    left: 40px; 
+    /* transform: translate(-50%, -50%);  */
+    width: 220px; 
+    height: 60px; 
+    color: white; 
+    text-decoration: none; 
+    text-align: center; 
+    overflow: hidden; 
+    background:rgb(115, 186, 186); 
+} 
+
+.cv a::before { 
+    content: ""; 
+    position: absolute; 
+    width: 0; 
+    height: 0; 
+    left: 0; 
+    bottom: 0; 
+    border-style: solid; 
+    border-color: #787cb5; 
+    border-width: 100px 200px; 
+    z-index: -1; 
+    transform: rotate(360deg); 
+    transition: 1s; 
+    transform-origin: left; 
+} 
+
+.cv a:hover::before { 
+    border-color:rgb(30, 30, 177); 
+    transform: rotate(60deg); 
+}   
+.btn--download{
+    padding: 18px 32px;
+    font-size: 22px;
+    
+    z-index: 100;
+    box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
+    animation: fade-up 0.5s 0.4s backwards;
+    border-radius: 60px;
+    }
+
+
+
+
+
+
+
+
 .skillsection{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,34 +241,71 @@ body{
                             'skillsect skillsect';
 
     }
+    
 }
 @media(max-width: 668px){
     .header{
         grid-template-columns: 1fr;
+        display: block;
     }
 
-
-    .personalinfo{
-        grid-template-columns: 1fr;
-    }
     .home-sci{
         grid-template-columns: 1fr;
     }
 
+    .navbar {
+        padding: 2px 0px;
+    }
+
+    .navbar a {
+        display: flex;
+        margin-top: -3px;
+        margin-left: -6px;
+    }
+
+    .home-content .btn-box {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+        height: 40px;
+    }
+
+    .infosection h1{
+        font-size: 50px;
+    }
+
+    .infosection h2{
+        font-size: 40px;
+    }
+
+    .home-sci{
+        bottom: px;
+        width: 200px;
+
+    }
+
+    .home-sci a {
+        width: 40px;
+        height: 40px;
+
+    }
+    .cv a{
+        margin-left: 140px;
+        font-size: 18px;
+        width: 190px;
+        margin-top: 420px;
+    }
+
+    
 
 
 }
-
-
-
-
-
 
 
 
 .home-sci{
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     width: 280px;
     display: flex;
     justify-content: space-between;
